@@ -3,6 +3,7 @@ const app = express();
 const db=require('./db');
 const personRoutes=require('./routes/personRoutes');
 const menuRouter=require('./routes/menuRoutes');
+require('dotenv').config();
 
 const bodyParser=require('body-parser');
 app.use(bodyParser.json());// req.body 
